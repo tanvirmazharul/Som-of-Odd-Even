@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summ of Odd & Even</title>
+    <label for="number">Input number:</label><br>
+    <input type="number" id="number" name="number" placeholder="give numb">
+    <input type="button" value="ok" onclick="add()"><br>
+    <p id="result_odd"></p>
+    <p id="result_even"></p>
+   
+
+
+    <script>
+        function add(){
+            var num =Number(document.getElementById("number").value);
+            var results_odd=0;
+            var results_even=0;
+           
+                for (let i=1;i<=num;i++){
+                    if ((i%2)==0){
+                        results_even=results_even+i;
+                    }else{
+                        results_odd=results_odd+i
+                    } 
+          
+                    
+           
+        }
+        document.getElementById("result_odd").innerHTML="Sum of Odd = "+results_odd;
+        document.getElementById("result_even").innerHTML="Sum of Even = "+results_even;
+    }
+        
+
+
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
